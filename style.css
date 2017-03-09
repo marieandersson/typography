@@ -1,6 +1,8 @@
+/* Wrapping */
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  background: #f7e8e8;
 }
 .wrap {
   max-width: 540px;
@@ -9,6 +11,8 @@ body {
   word-wrap: break-word;
   word-break: normal;
 }
+
+/* Headings */
 h1, h2, h3 {
   color: #222;
   font-family: 'francois one';
@@ -17,7 +21,7 @@ h1, h2, h3 {
 h1 {
   font-size: 2.618em;
   margin: 0 0 0.7em;
-  border-bottom: 1px solid	#888;
+  border-bottom: 1px solid #888;
 }
 h2 {
   margin: 1.5em 0 0;
@@ -29,18 +33,61 @@ h3 {
   font-size: 1.125em;
   text-transform: uppercase;
 }
+.firstH3 {
+  margin-top: 0.5em;
+}
+
+/* Paragraphs and Lists */
 p, li {
-  color: #444;
+  color: #333;
   font-family: 'Kreon';
-  line-height: 1.4;
-  font-size: 1.125em;
   margin-top: 0;
   font-weight: 300;
+}
+p {
+  font-size: 1.125em;
+  line-height: 1.4;
+  font-weight: 300;
+}
+.firstParagraph {
+  font-weight: 400;
 }
 .lastParagraph {
   padding-bottom: 1.5em;
   border-bottom: 1px solid	#888;
 }
+ul {
+  padding: 0;
+  margin-top: 0;
+}
+li {
+  font-size: 0.9em;
+  line-height: 1.3;
+  list-style-type: none;
+}
+.firstImgSrc {
+  margin-bottom: 1em;
+}
+.mainLink {
+  font-size: 1.125em;
+}
+span {
+  font-weight: bold;
+}
+.firstSpan {
+  font-size: 1.125em;
+  font-weight: normal;
+}
+
+/* Links */
+a {
+  color: #777;
+}
+a:hover {
+  color: #333;
+}
+
+/* MEdia Queries */
 @media only screen and (min-width: 600px) {
   h1 {
     margin-top: 1em;
@@ -48,6 +95,6 @@ p, li {
 }
 @media only screen and (min-width: 800px) {
   h1 {
-    margin-top: 2em;
+    margin-top: 1.8em;
   }
 }
